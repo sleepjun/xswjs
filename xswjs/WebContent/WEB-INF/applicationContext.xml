@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns:p="http://www.springframework.org/schema/p "	
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+						http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+	<bean id="c3p0DataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource" destroy-method="close">
+		<property name="driverClass" value="com.mysql.jdbc.Driver"/>
+		<property name="jdbcUrl" value="jdbc:mysql://localhost:3306/zf"/>
+		<property name="user" value="root"/>
+		<property name="password" value="12345"/>
+		<property name="minPoolSize" value="10"/>
+		<property name="maxPoolSize" value="50"/>
+		<property name="maxIdleTime" value="1800"/>
+	</bean>
+	<bean id="mysessionFactory" class="org.springframework.orm.hibernate3.LocalSessionFactoryBean">
+		<property name="dataSource" ref="c3p0DataSource"></property>
+		<property name="mappingResources">
+			<list>
+				<value>cn/edu/zjweu/zf/entity/User.hbm.xml</value>
+				<value>cn/edu/zjweu/zf/entity/Qx.hbm.xml</value>
+				<value>cn/edu/zjweu/zf/entity/Fwlx.hbm.xml</value>
+				<value>cn/edu/zjweu/zf/entity/Fwxx.hbm.xml</value>
+				<value>cn/edu/zjweu/zf/entity/Jd.hbm.xml</value>
+			</list>
+		</property>
+		<property name="hibernateProperties">
+			<props>
+				<prop key="hibernate.dialect">org.hibernate.dialect.MySQL5Dialect</prop>
+				<prop key="hibernate.show_sql">true</prop>
+			</props>
+		</property>
+	</bean>
+	<!-- dao -->
+	<bean id="fwlxDao" class="cn.edu.zjweu.zf.dao.hib.FwlxDaoHibImpl">
+		<property name="sessionFactory" ref="mysessionFactory"></property>
+	</bean>			
+	<bean id="fwxxDao" class="cn.edu.zjweu.zf.dao.hib.FwxxDaoHibImpl">
+		<property name="sessionFactory" ref="mysessionFactory"></property>
+	</bean>		
+	<bean id="qxDao" class="cn.edu.zjweu.zf.dao.hib.QxDaoHibImpl">
+		<property name="sessionFactory" ref="mysessionFactory"></property>
+	</bean>		
+	<bean id="userDao" class="cn.edu.zjweu.zf.dao.hib.UserDaoHibImpl">
+		<property name="sessionFactory" ref="mysessionFactory"></property>
+	</bean>	
+	<!-- Biz -->
+	<!-- Biz实现类要getter，setter方法 -->
+	<bean id="fwxxBiz" class="cn.edu.zjweu.zf.biz.impl.FwxxBizImpl">
+		<property name="fhiDao" ref="fwxxDao"></property>
+	</bean>	
+	<bean id="userBiz" class="cn.edu.zjweu.zf.biz.impl.UserBizImpl">
+		<property name="uDao" ref="userDao"></property>
+	</bean>	
+	<!-- package cn.edu.zjweu.zf.biz.impl.FwxxBizImpl  -->
+	<bean id="qxBiz" class="cn.edu.zjweu.zf.biz.impl.QxBizImpl">
+		<property name="qDao" ref="qxDao"></property>
+		<property name="flDao" ref="fwlxDao"></property>
+	</bean>		
+	<!-- action -->
+	<!-- 需要在struts.xml中对应action的class属性修改成这里对应的id值
+	每个action类中的biz属性必须要有set 
+	添加struts2的jar-->
+	<bean id="userAction" class="cn.edu.zjweu.zf.action.UserAction" scope="prototype">
+		<property name="uBiz" ref="userBiz"/>
+	</bean>		
+	<bean id="fwxxAction" class="cn.edu.zjweu.zf.action.FwxxAction" scope="prototype">
+		<property name="biz" ref="fwxxBiz"/>
+	</bean>		
+</beans>

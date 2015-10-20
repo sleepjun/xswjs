@@ -1,0 +1,131 @@
+@charset "GBK";
+
+/*=======   CSS Document   =======*/
+body{margin:0; padding:0; background: #FFF; color:#222; font:14px "Î¢ÈíÑÅºÚ"}
+*{margin:0px;
+padding:0px;}
+img{border:none;}
+
+
+/*=======    Ö÷Á´½ÓÑÕÉ«    =======*/
+a{color:#222;text-decoration:none;cursor:pointer;outline:none;}
+a:hover{color:#222;}
+/*×¢²áÒ³*/
+/* State
+----------------------------------------------- */
+ul,li{
+list-style:none;
+}
+
+.sxList{margin: 0px 5px;}
+
+.sxList li{height: 40px;line-height:36px;margin:3px 4px;}
+
+.sxList li span em{color: #f00;margin-right:5px;margin-top: 3px;}
+
+.sxList li span{float: left;color:#bb9632;width:26%;font-size: 15px;}
+
+.sxList li em{position:absolute;float:left;left:40%;font-style:normal;color:#b8b7b7;cursor:text;text-align: center;font-size:12px;}
+
+.TranLogin_text1{font-family:"Î¢ÈíÑÅºÚ";font-size:14px;width:73%;height:36px;border:1px solid #dac590;border-radius: 5px;color: #8f8d8d;text-indent:5px;}
+
+.TranLogin_text2{float:left;width:76%;height:36px;border:1px solid #dac590;border-radius: 5px;color: #8f8d8d;text-indent:5px;font-family:"Î¢ÈíÑÅºÚ";font-size: 14px;}
+
+.TranLogin_button{display:block;border-radius:5px;border:none;cursor: pointer;background: #f7843a;height: 36px;color: #fff;text-align: center;line-height:36px;font-size:12px;}
+/*
+.sxList li img{float:right;width:15px;height:15px;margin-top:3px;}*/
+
+.sxList li strong{color: #f7843a;float: left;margin-left: 10px;}
+
+.sxList li a:hover{color: #fff;}
+
+.TranLogin_close{display: none;}
+
+.cap img{float:left;width:47px;height:27px;margin: 5px  10px 0 10px;}
+
+.twoDime{float: left;width: 33px;height: 34px;}
+
+/********ÏÂÀ­¿ò1*******/
+
+.select_box{float:left;color:#444;position:relative;cursor:pointer; width:74%;height:36px;border:1px solid #dac590;border-radius: 5px;background:#fff;}
+
+.selet_open{display:inline-block;position:absolute;right:0;top:1px;height:34px;border-left: 1px solid #DAC590;}
+
+.sxList li .select_txt{font-family:"Î¢ÈíÑÅºÚ";display:inline-block;padding-left:5px;width:140px;line-height:36px;height:36px;cursor:text;color:#aaaaaa;overflow:hidden;font-size: 14px;}
+
+.option{width:100%;border:1px solid #dac590;border-radius: 5px 5px 5px 5px;border-top:none;position:absolute;top:37px;left:0px;z-index:999;overflow:hidden;display:none;}
+
+.sxList .option a{display:block;height:25px;line-height:25px;text-align:left;padding:0 10px;width:100%;background:#fff;}
+
+.sxList .option a:hover{color:#BB9632;}
+
+.sxList li .TranLogin_arrow_down1{width:10px;height:10px;margin:12px 10px 0 10px;}
+
+.sxList li .radio{margin-right: 20px;color: #bb9632;float: left;font-size: 15px;}
+
+.button{width: 210px;height: 30px;margin:10px 0 0 0px;}
+
+.agreen a{color: #9f5cea;}
+
+.sxList .agreen p a:hover{color: #9f5cea;}
+
+.agreen p{float:left;width:73%;line-height: 20px;font-size: 12px;}
+
+footer{position:fixed;width:100%;bottom:0px;background: url(../image/footer_bg.png) no-repeat 0 0;background-size: 100%;height:29px;line-height:39px;color: #b78e00;text-align: center;font-size: 10px;}
+
+.footer_clear{height:29px;}
+.txt{}
+
+.txt h1{color: #000;font-size: 15px;border-bottom: 1px solid #c3a328;height: 30px;line-height: 30px;text-indent: 10px;font-weight: bold;}
+
+.txt p{clear: both;line-height: 30px;margin-top:10px;font-size: 13px;padding: 0 10px;}
+
+.txt p b{font-weight: bold;display: block;}
+
+
+ul.BiaoTitle{ width:320px; height:26px; clear:both; overflow:hidden;margin: 0 auto 20px auto;}
+ul.BiaoTitle li{ height:26px; width:320px; clear:both; overflow:hidden;cursor: pointer;}
+ul.BiaoTitle li.TT1{background:url(../image/lan1.png) center top no-repeat;}
+ul.BiaoTitle li.TT2{background:url(../image/lan2.png) center top no-repeat;}
+ul.BiaoTitle li.TT3{background:url(../image/lan3.png) center top no-repeat;}
+ul.BiaoTitle li p{ width:106px; height:26px; float:left;line-height: 26px;text-align: center;font-size: 12px;}
+ul.BiaoTitle li .bltxt{color: #fff;}
+
+
+.we_tit{color: #000;font-size:15px;line-height: 26px;margin-left: 10px;height: 40px; }
+
+.dibu{
+width:100%;
+}
+.anniu{
+width:70%;
+margin:0 auto;
+height:40px;}
+.anniu input{
+height:40px;
+line-height:35px;
+width:100%;
+}
+.tiaok{
+height:30px;
+line-height:30px;
+font-size:13px;
+color:#3399CC;
+text-align:center;
+margin-top:10px;}
+
+
+
+/* done.asp ×¢²á³É¹¦
+----------------------------------------------- */
+	.bodyStep4{ width:960px; margin:0 auto 7px;}
+	.bodyStep4 .title{ background:url(../../../image/mgr/logon/done_ico.jpg) no-repeat 0 center; width:320px; height:90px; margin:0 auto; padding-left:80px; font:600 28px/90px Arial, "Î¢ÈíÑÅºÚ", "ËÎÌå"; color:#ff6904;}
+	.bodyStep4 li{ float:left;}
+	.bodyStep4 textarea{ width:300px; height:100px;}
+	.bodyStep4 .content{ width:650px; margin:0 auto;}
+	.bodyStep4 label{ float:left; width:6em; text-align:right; font:100 12px/25px Arial, "Î¢ÈíÑÅºÚ", "ËÎÌå";}
+	.bodyStep4 .div{ padding:3px 0; background:#fff;}
+	.bodyStep4 .div2{ float:left; width:385px;}
+	.bodyStep4 .help{ color:#238cee; width:250px; float:right; font:100 12px/20px Arial, "Î¢ÈíÑÅºÚ", "ËÎÌå";}
+	.bodyStep4 span{ line-height:40px;}
+	

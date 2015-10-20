@@ -1,0 +1,38 @@
+@charset "utf-8";
+*{padding:0px; margin:0px;}
+body {font-family:"宋体";font-size:12px;background:#FFF;width:100%;color:#3E3E3E;}
+a{color:#000;text-decoration:none;}
+a:link{text-decoration:none;}
+a:hover{color:#f00;}
+ul,dd,dl,li{list-style:none;}
+img{border:none;}
+
+.login13{background:url("../images/v13/logins.png")/*tpa=http://www.jinmajia.com/web/images/v13/logins.png*/ repeat-x; height:35px;  position:fixed; left:0px; top:0px; width:100%; border-top:2px solid #FFAE00;z-index:1;}
+.login13 .logins{line-height:35px; height:35px; width:998px; margin-left:auto; margin-right:auto; text-align:left;}
+.login13 .logins span.toolss{float:right; font-size:12px; color:#fff; line-height:35px; color:#414141;}
+.login13 .logins span.toolss a.kf{background:url("../images/v13/kf.png")/*tpa=http://www.jinmajia.com/web/images/v13/kf.png*/ left no-repeat; text-indent:25px; color:#646464; display:block; float:right;}
+
+.cls{clear:both; visibility:hidden; line-height:0px; height:0px; font-size:0px; overflow:hidden;}
+
+.navtop{width:998px; margin:0 auto;}
+.navtop ul,.navtop li,.navtop dd{overflow:hidden; display:block;}
+.navlogo{float:left; width:100%; height:117px; font-family:"微软雅黑";}
+.navlogo .logo13{cursor:pointer;}
+.navlogo .navtoptag{float:left; margin-top:22px; margin-left:40px;}
+.navlogo .navtoptag dd{float:left; width:80px; height:74px; background-position:left top; background-repeat:no-repeat; margin-left:20px;}
+.navlogo .navtoptag dd a{display:block; font-size:14px; width:80px; height:80px; text-align:center; line-height:108px; color:#444; cursor:pointer; text-decoration:none;}
+.navlogo .navtoptag dd#index a{line-height:14px; padding-top:36px;}
+.navlogo .navtoptag dd.na0{background:url("../images/v13/nav0.png")/*tpa=http://www.jinmajia.com/web/images/v13/nav0.png*/;}
+.navlogo .navtoptag dd.na1{background:url("../images/v13/nav1.png")/*tpa=http://www.jinmajia.com/web/images/v13/nav1.png*/;}
+.navlogo .navtoptag dd.na2{background:url("../images/v13/nav2.png")/*tpa=http://www.jinmajia.com/web/images/v13/nav2.png*/;}
+.navlogo .navtoptag dd.na3{background:url("../images/v13/nav3.png")/*tpa=http://www.jinmajia.com/web/images/v13/nav3.png*/;}
+.navlogo .navtoptag dd.na4{background:url("../images/v13/nav4.png")/*tpa=http://www.jinmajia.com/web/images/v13/nav4.png*/;}
+.navlogo .navtoptag dd.na5{background:url("../images/v13/nav5.png")/*tpa=http://www.jinmajia.com/web/images/v13/nav5.png*/;}
+.navlogo .navtoptag dd.na6{background:url("../images/v13/nav6.png")/*tpa=http://www.jinmajia.com/web/images/v13/nav6.png*/;}
+.navlogo .navtoptag dd.nahov0{background:url("../images/v13/nav0hov.png")/*tpa=http://www.jinmajia.com/web/images/v13/nav0hov.png*/;}
+.navlogo .navtoptag dd.nahov1{background:url("../images/v13/nav1hov.png")/*tpa=http://www.jinmajia.com/web/images/v13/nav1hov.png*/;}
+.navlogo .navtoptag dd.nahov2{background:url("../images/v13/nav2hov.png")/*tpa=http://www.jinmajia.com/web/images/v13/nav2hov.png*/;}
+.navlogo .navtoptag dd.nahov3{background:url("../images/v13/nav3hov.png")/*tpa=http://www.jinmajia.com/web/images/v13/nav3hov.png*/;}
+.navlogo .navtoptag dd.nahov4{background:url("../images/v13/nav4hov.png")/*tpa=http://www.jinmajia.com/web/images/v13/nav4hov.png*/;}
+.navlogo .navtoptag dd.nahov5{background:url("../images/v13/nav5hov.png")/*tpa=http://www.jinmajia.com/web/images/v13/nav5hov.png*/;}
+.navlogo .navtoptag dd.nahov6{background:url("../images/v13/nav6hov.png")/*tpa=http://www.jinmajia.com/web/images/v13/nav6hov.png*/;}

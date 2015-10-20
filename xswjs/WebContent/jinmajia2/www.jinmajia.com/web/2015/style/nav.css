@@ -1,0 +1,23 @@
+﻿.header{width:100%;font-family:"微软雅黑";}
+.line{border-bottom:5px solid #FF8A00;}
+.topv15{width:1000px; height:135px; margin:0 auto; position:relative;}
+.topv15 a.logo{display:block; background:url(http://www.jinmajia.com/web/2015/images/logo.png) 20px center no-repeat; width:270px; height:135px;position:absolute; left:0px; top:0;}
+.topv15 .nav{position:absolute;width:720px; right:5px; display:block; top:25px;}
+.topv15 .nav a,.top nav a.now{background:url(http://www.jinmajia.com/web/2015/images/menubg.png) top center no-repeat; width:125px; display:inline-block;}
+.topv15 .nav a:hover,.topv15 .nav a.hover{background:url(http://www.jinmajia.com/web/2015/images/menubg2.png) top center no-repeat;}
+.topv15 .nav a span{display:block; width:70px; height:60px; margin:0 auto;}
+.topv15 .nav a span.f1{background:url(http://www.jinmajia.com/web/2015/images/f1.png) center no-repeat;}
+.topv15 .nav a span.f2{background:url(http://www.jinmajia.com/web/2015/images/f2.png) center no-repeat;}
+.topv15 .nav a span.f3{background:url(http://www.jinmajia.com/web/2015/images/f3.png) center no-repeat;}
+.topv15 .nav a span.f4{background:url(http://www.jinmajia.com/web/2015/images/f4.png) center no-repeat;}
+.topv15 .nav a span.f5{background:url(http://www.jinmajia.com/web/2015/images/f5.png) center no-repeat;}
+.topv15 .nav a span.f6{background:url(http://www.jinmajia.com/web/2015/images/f6.png) center no-repeat;}
+.topv15 em{display:block; line-height:36px; color:#474747; font-style:normal; font-size:16px; text-align:center;font-family:"微软雅黑";}
+#showlist{display:block; width:220px; height:60px; font-style:normal; position:absolute; right:35px; top:0px; overflow:hidden; border:1px solid #FF900D; border-left:none; border-radius:5px; -mo-border-radius: 5px;  -webkit-border-radius: 5px;}
+#showlist a{width:90px; line-height:30px; background:none; height:30px; text-indent:45px; display:inline-block;}
+#showlist p{display:block; border-bottom:1px dashed #bbb; width:180px; margin-left:30px;}
+#showlist p.no{border-bottom:none;}
+#showlist a.mj{background:url(http://www.jinmajia.com/web/2015/images/gdmenu.png) 10px 0px no-repeat;}
+#showlist a.zs{background:url(http://www.jinmajia.com/web/2015/images/gdmenu.png) 10px -56px no-repeat;}
+#showlist a.mc{background:url(http://www.jinmajia.com/web/2015/images/gdmenu.png) 10px -30px no-repeat;}
+#showlist a.yu{background:url(http://www.jinmajia.com/web/2015/images/gdmenu.png) 10px -80px no-repeat;}

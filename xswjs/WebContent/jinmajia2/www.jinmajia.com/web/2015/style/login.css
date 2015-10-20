@@ -1,0 +1,21 @@
+@charset "utf-8";
+/* CSS Document */
+*{padding:0px; margin:0px;}
+body{padding-top:40px; _padding-top:0px;}
+.loginbar2015{position:fixed; background:url(http://www.jinmajia.com/web/2015/images/login.png) repeat-x; line-height:40px; width:100%; top:0; left:0; z-index:998;}
+.loginbar2015 .l_loing{display:block; line-height:40px; height:40px;}
+.loginbar2015 .tools{position:absolute; right:0px; top:0px; height:40px;}
+.loginv15{width:1000px; margin:0 auto; height:40px; position:relative;font-family:"宋体";}
+.loginv15 a{display:inline-block; margin-right:5px; color:#333;}
+.loginv15 a:hover{color:#F30408;}
+.loginv15 a.my{/*width:96px;*/ width:76px;color:#F26B0C;background:url(/web/images/icon_down.png) right no-repeat;padding-right:2px;}
+.loginv15 a.kf{ background:url(http://www.jinmajia.com/web/2015/images/icon3.png) left 0px no-repeat; text-indent:30px;}
+.loginv15 a.wb{ background:url(http://www.jinmajia.com/web/2015/images/icon3.png) left -40px no-repeat; text-indent:30px;}
+.loginv15 a.wx{ background:url(http://www.jinmajia.com/web/2015/images/icon3.png) left -80px no-repeat; text-indent:30px; color:#F26B0C;}
+.loginv15 a.app{ background:url(http://www.jinmajia.com/web/2015/images/icon3.png) left -120px no-repeat; text-indent:30px;}
+.loginv15 em{display:inline-block; position:relative; font-style:normal; cursor:pointer;}
+.loginv15 em i{display:block; position:absolute; top:30px; background:url(http://www.jinmajia.com/web/2015/images/flaytop.png) center top no-repeat; width:100%; z-index:999; font-style:normal; display:none;}
+.loginv15 img{margin:0px auto; display:block;}
+.loginv15 em i span{margin-top:13px; display:block; border:4px solid #D3D3D3; border-top:none; border-bottom-left-radius:5px; border-bottom-right-radius:5px; box-shadow:4px 2px #ededed; background:#fff;}
+.loginv15 em a{display:block; line-height:30px; text-align:center;}
+.loginv15 .appfly{width:180px; margin-left:-60px;}

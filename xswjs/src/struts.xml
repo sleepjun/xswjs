@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+
+	<constant name="struts.enable.DynamicMethodInvocation" value="false" />
+	<constant name="struts.devMode" value="true" />
+
+	<package name="default" namespace="/" extends="struts-default">
+
+		<default-action-ref name="index" />
+
+		<global-results>
+			<result name="error">/error.jsp</result>
+		</global-results>
+
+		<global-exception-mappings>
+			<exception-mapping exception="java.lang.Exception"
+				result="error" />
+		</global-exception-mappings>
+		
+
+		<action name="news_*" class="com.xswjs.action.NewsAction"
+			method="{1}">
+			<!-- getinform -->
+			<result name="success">/index.jsp</result>
+			<result name="info">/info.jsp</result>
+			<result name="getinform">/informaction.jsp</result>
+			<result name="getMessage">/message.jsp</result>
+			<result name="getIntoMarket">/intomarket.jsp</result>
+			<result name="getDownLoad">/download.jsp</result>
+			<result name="MessageInfo">../../../article/info.jsp</result>
+			<!-- <result name="GGGS">../../../lyzt/2014/02/coin/gggs/index.jsp</result> -->
+			<result name="GGGS">../../../article/index.jsp</result>
+			<result name="DOWNLOAD">../../../article/download.jsp</result>
+			<result name="GDJG">../../../article/jdzg.jsp</result>
+			<result name="YHZC">../../../user/regist/step3.jsp</result>
+			<result name="BANK">../../../article/bank.jsp</result>
+			<result name="REG">../../../article/step3.jsp</result>
+		</action>
+
+	</package>
+
+	<!-- Add packages here -->
+
+</struts>

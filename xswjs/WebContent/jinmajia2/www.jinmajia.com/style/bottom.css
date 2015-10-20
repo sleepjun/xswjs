@@ -1,0 +1,10 @@
+@charset "utf-8";
+#bottom{width:998px; margin-left:auto; margin-right:auto;}
+.bt_txt{ text-align:center; color:#353535;font-size:12px; clear:both;line-height:30px;}
+.bt_txt img{margin-top:10px; margin-bottom:5px; border:0;}
+.bt_bg{ text-align:center;background:#FF7300; height:35px; vertical-align:middle; line-height:35px; margin-bottom:10px;  margin-top:10px; color:#FFF; font-size:12px;}
+.bt_bg a{margin:0px; padding:0px;}
+.bt_bg a:link,.bt_bg a:visited{ color:#FFF; text-decoration:none;}
+.bt_bg a:hover{color:#FFF;text-decoration:none;}
+.bt_txt a:link,.bt_txt a:visited{text-decoration:none;}
+.bt_txt a:hover{text-decoration:none;}

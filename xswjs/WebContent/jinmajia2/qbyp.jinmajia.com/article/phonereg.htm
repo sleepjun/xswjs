@@ -1,0 +1,363 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0028)http://www.jmjyb.cn/reg.html -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>金马甲邮币交易平台手机注册</title>
+<meta content="initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width" name="viewport">
+<meta content="initial-scale=1.0,user-scalable=no,maximum-scale=1" media="(device-height: 568px)" name="viewport">
+<meta content="yes" name="apple-mobile-web-app-capable">
+<meta content="black" name="apple-mobile-web-app-status-bar-style">
+<meta content="telephone=no" name="format-detection">
+
+<meta name="viewport" content="width=device-width,target-densitydpi=medium-dpi,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+<script type="text/javascript" src="./phonereg/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="./phonereg/provinceChoose.js"></script>
+<script type="text/javascript" src="./phonereg/jquery.alerts.js"></script>
+<!--<script charset="utf-8" type="text/javascript"  src="/yemian/reg.js"></script>
+
+<!--<link href="/regpage_files/base.css" rel="stylesheet" type="text/css">
+<link href="/regpage_files/jquery.alerts.css" rel="stylesheet" type="text/css">
+<link href="/regpage_files/new.css" rel="stylesheet" type="text/css">
+<link href="/regpage_files/my.css" rel="stylesheet" type="text/css">-->
+
+<link href="./phonereg/mobile.css" rel="stylesheet" type="text/css">
+
+<style type="text/css">
+<!--
+.STYLE1 {
+	font-size: 10px;
+	line-height: 5px;
+	text-transform: none;
+}
+-->
+</style>
+</head>
+
+<body onload="">
+<img src="./phonereg/register_mobile_fgx.png" width="100%">
+<ul class="sxList" id="SelectCon1">
+
+
+<script language="javascript" type="text/javascript">
+
+
+
+function FormCheck()
+{ 
+
+if (document.getElementById("name").value =="") 
+{ 
+alert("请输入姓名！"); 
+document.getElementById("name").focus(); 
+return (false); 
+} 
+
+
+var filter=/^[\u4e00-\u9fa5]+$/; 
+if (!filter.test(document.getElementById("name").value))
+{ 
+alert("请输入中文名字！"); 
+document.getElementById("name").focus(); 
+return (false); 
+} 
+
+
+
+if (document.getElementById("phone").value =="") 
+{ 
+alert("请输入您的手机号码！"); 
+document.getElementById("phone").focus(); 
+return (false); 
+} 
+
+
+
+
+if (document.getElementById("cardNumber").value =="") 
+{
+alert("请填写身份证号码！");
+document.getElementById("cardNumber").focus();
+return (false); 
+}
+
+if(document.getElementById("contactMan").value =="") {
+alert("请输入联系人！");
+document.getElementById("contactMan").focus();
+return (false); 
+}
+
+
+if(document.getElementById("address").value =="") {
+alert("请输入联系地址！");
+document.getElementById("address").focus();
+return (false); 
+}
+
+if(document.getElementById("email").value =="") {
+alert("请输入Email！");
+document.getElementById("email").focus();
+return (false); 
+}
+
+
+document.getElementById("registfrm").submit();
+ 
+}
+
+
+
+</script>
+
+
+
+<form id="registfrm" action="http://218.246.20.82:16926/SelfOpenAccount/firmController.fir?funcflg=AddFirm" method="post">
+
+   <li>
+      <span>姓名：</span>
+       <input type="text" class="TranLogin_text1" placeholder="请输入真实姓名" id="name" name="name">
+</li>
+ <li><span>手机号码：</span><input type="text" class="TranLogin_text1" placeholder="请输入手机号" id="phone" name="phone"></li>
+ 
+ <!--
+   <li>
+        		<span>证件类型</span>
+        	<div class="select_box">
+            	<span class="select_txt" id="certtype">身份证</span><a class="selet_open"><b><img src="/yemian/down.png" class="TranLogin_arrow_down1"></b></a>
+            	<div class="option" id="option"></div>
+            	<input type="hidden" id="cardType"   name="cardType" value="1"/>
+        	</div>
+</li>
+-->
+
+ <li><span>身份证号：</span><input type="text" class="TranLogin_text1" placeholder="请输入证件号码" id="cardNumber" name="cardNumber"></li>
+  <li><span>联系住址：</span><input type="text" class="TranLogin_text1" placeholder="请输入联系住址" id="address" name="address"></li>
+ <li><span>电子邮箱：</span><input type="text" class="TranLogin_text1" placeholder="请输入电子邮箱" id="email" name="email"></li>
+ <li><span>建行卡号：</span><input type="text" class="TranLogin_text1" placeholder="请输入建行卡号" id="bankaccount" name="bankaccount"></li>
+
+   
+   
+  
+        
+	 		<li>
+        <span> 经纪会员：</span>
+		
+          <select id="brokerId" name="brokerId">
+            
+          <option value="1763">1763包国方</option></select>
+        	
+    </li>
+      <!--     <dt>验证码：</dt>
+      <dd style="width:300px; overflow:hidden;">
+<input name="yanzhengma" id="yanzhengma" style="width:80px;"><img name="img" id="img" src="http://218.246.20.82:16926/SelfOpenAccount/image.jsp" align="absmiddle"><a style="cursor:hand;text-decoration: underline;" onclick="changeImg();"><font color="blue">看不清,换一张</font></a>
+
+-->
+      
+      <input type="hidden" id="RANDOMICITYNUM" name="RANDOMICITYNUM" value="1">
+      <input type="hidden" id="yanzhengma" name="yanzhengma" value="1">
+      <input type="hidden" id="mobile" name="mobile" value="1">
+      <input type="hidden" id="fax" name="fax" value="1">
+      <input type="hidden" id="industryCode" name="industryCode" value="1">
+      <input type="hidden" id="zoneCode" name="zoneCode" value="1">
+      <input type="hidden" id="organizationCode" name="organizationCode" value="1">
+      <input type="hidden" id="corporateRepresentative" name="corporateRepresentative" value="1">
+      <input type="hidden" id="bankId" name="bankId" value="13">
+      <input type="hidden" id="postCode" name="postCode" value="1">
+      <input type="hidden" id="type" name="type" value="3">
+	  <input type="hidden" id="cardType" name="cardType" value="1">
+	   <input type="hidden" id="contactMan" name="contactMan" value="手机注册用户">
+	     <input type="hidden" id="brokerId" name="brokerId" value="1085">
+      
+      <dd> </dd>
+    
+  
+
+	   <li>
+    <div align="center">
+       <input name="xieyi" type="checkbox" id="xieyi" value="1" checked="checked" align="absmiddle">
+      <a href="http://www.jmjyb.cn/xieyi.html" class="STYLE1">我已认真阅读《北交所邮币交易平台交易规则》，<br>同意遵守交易平台各项管理制度。</a></div>
+    </li>
+	<br>
+	  <li> <div align="center"><img src="./phonereg/button.png" id="Sub" class="button" onclick="return FormCheck(&#39;&#39;);"></div></li>
+   
+</form>
+
+
+
+</ul>
+
+	<div class="footer_clear"></div>
+
+<script type="text/javascript">
+
+
+$(function () {
+    //初始化省份菜单
+    var prov = new Array();
+    
+    prov[31] = "浙江";
+       for (var i = 1; i < prov.length; i++) {
+        $("#selectProv").append("<option>"+prov[i]+"</option>");
+    }
+
+    var city = new Array();
+    city[1] = new Array("北京市");
+    city[2] = new Array("天津市");
+    city[3] = new Array("上海市");
+    city[4] = new Array("重庆市");
+    city[5] = new Array("安庆市", "蚌埠市", "亳州市", "巢湖市", "池州市", "滁州市", "阜阳市", "合肥市", "淮北市", "淮南市", "黄山市", "六安市", "马鞍山市", "宿州市", "铜陵市", "芜湖市", "宣城市");
+    city[6] = new Array("福州市", "龙岩市", "南平市", "宁德市", "莆田市", "泉州市", "三明市", "厦门市", "漳州市");
+    city[7] = new Array("白银市", "定西市", "甘南藏族自治州", "嘉峪关市", "金昌市", "酒泉市", "兰州市", "临夏回族自治州", "陇南市", "平凉市", "庆阳市", "天水市", "武威市", "张掖市");
+    city[8] = new Array("潮州市", "东莞市", "佛山市", "广州市", "河源市", "惠州市", "江门市", "揭阳市", "茂名市", "梅州市", "清远市", "汕头市", "汕尾市", "韶关市", "深圳市", "阳江市", "云浮市", "湛江市", "肇庆市", "中山市", "珠海市");
+    city[9] = new Array("百色市", "北海市", "崇左市", "防城港市", "贵港市", "桂林市", "河池市", "贺州市", "来宾市", "柳州市", "南宁市", "钦州市", "梧州市", "玉林市");
+    city[10] = new Array("安顺市", "毕节地区", "贵阳市", "六盘水市", "黔东南苗族侗族自治州", "黔南布依族苗族自治州", "黔西南布依族苗族自治州", "铜仁地区", "遵义市");
+    city[11] = new Array("白沙黎族自治县", "保亭黎族苗族自治县", "昌江黎族自治县", "澄迈县", "儋州市", "定安县", "东方市", "海口市", "乐东黎族自治县", "临高县", "陵水黎族自治县", "琼海市", "琼中黎族苗族自治县", "三亚市", "屯昌县", "万宁市", "文昌市", "五指山市");
+    city[12] = new Array("保定市", "沧州市", "承德市", "邯郸市", "衡水市", "廊坊市", "秦皇岛市", "石家庄市", "唐山市", "邢台市", "张家口市");
+    city[13] = new Array("安阳市", "鹤壁市", "济源市", "焦作市", "开封市", "洛阳市", "漯河市", "南阳市", "平顶山市", "濮阳市", "三门峡市", "商丘市", "新乡市", "信阳市", "许昌市", "郑州市", "周口市", "驻马店市");
+    city[14] = new Array("大庆市", "大兴安岭地区", "哈尔滨市", "鹤岗市", "黑河市", "鸡西市", "佳木斯市", "牡丹江市", "七台河市", "齐齐哈尔市", "双鸭山市", "绥化市", "伊春市");
+    city[15] = new Array("鄂州市", "恩施土家族苗族自治州", "黄冈市", "黄石市", "荆门市", "荆州市", "潜江市", "神农架林区", "十堰市", "随州市", "天门市", "武汉市", "仙桃市", "咸宁市", "襄樊市", "孝感市", "宜昌市");
+    city[16] = new Array("长沙市", "常德市", "郴州市", "衡阳市", "怀化市", "娄底市", "邵阳市", "湘潭市", "湘西土家族苗族自治州", "益阳市", "永州市", "岳阳市", "张家界市", "株洲市");
+    city[17] = new Array("白城市", "白山市", "长春市", "吉林市", "辽源市", "四平市", "松原市", "通化市", "延边朝鲜族自治州");
+    city[18] = new Array("常州市", "淮安市", "连云港市", "南京市", "南通市", "苏州市", "宿迁市", "泰州市", "无锡市", "徐州市", "盐城市", "扬州市", "镇江市");
+    city[19] = new Array("抚州市", "赣州市", "吉安市", "景德镇市", "九江市", "南昌市", "萍乡市", "上饶市", "新余市", "宜春市", "鹰潭市");
+    city[20] = new Array("鞍山市", "本溪市", "朝阳市", "大连市", "丹东市", "抚顺市", "阜新市", "葫芦岛市", "锦州市", "辽阳市", "盘锦市", "沈阳市", "铁岭市", "营口市");
+    city[21] = new Array("阿拉善盟", "巴彦淖尔市", "包头市", "赤峰市", "鄂尔多斯市", "呼和浩特市", "呼伦贝尔市", "通辽市", "乌海市", "乌兰察布市", "锡林郭勒盟", "兴安盟");
+    city[22] = new Array("固原市", "石嘴山市", "吴忠市", "银川市", "中卫市");
+    city[23] = new Array("果洛藏族自治州", "海北藏族自治州", "海东地区", "海南藏族自治州", "海西蒙古族藏族自治州", "黄南藏族自治州", "西宁市", "玉树藏族自治州");
+    city[24] = new Array("滨州市", "德州市", "东营市", "菏泽市", "济南市", "济宁市", "莱芜市", "聊城市", "临沂市", "青岛市", "日照市", "泰安市", "威海市", "潍坊市", "烟台市", "枣庄市", "淄博市");
+    city[25] = new Array("长治市", "大同市", "晋城市", "晋中市", "临汾市", "吕梁市", "朔州市", "太原市", "忻州市", "阳泉市", "运城市");
+    city[26] = new Array("安康市", "宝鸡市", "汉中市", "商洛市", "铜川市", "渭南市", "西安市", "咸阳市", "延安市", "榆林市");
+    city[27] = new Array("阿坝藏族羌族自治州", "巴中市", "成都市", "达州市", "德阳市", "甘孜藏族自治州", "广安市", "广元市", "乐山市", "凉山彝族自治州", "泸州市", "眉山市", "绵阳市", "内江市", "南充市", "攀枝花市", "遂宁市", "雅安市", "宜宾市", "资阳市", "自贡市");
+    city[28] = new Array("阿克苏市", "阿拉尔市", "阿勒泰市", "阿图什市", "博乐市", "昌吉市", "阜康市", "哈密市", "和田市", "喀什市", "克拉玛依市", "库尔勒市", "奎屯市", "米泉市", "石河子市", "塔城市", "图木舒克市", "吐鲁番市", "乌鲁木齐市", "乌苏市", "五家渠市", "伊宁市");
+    city[29] = new Array("阿里地区", "昌都地区", "拉萨市", "林芝地区", "那曲地区", "日喀则地区", "山南地区");
+    city[30] = new Array("保山市", "楚雄彝族自治州", "大理白族自治州", "德宏傣族景颇族自治州", "迪庆藏族自治州", "红河哈尼族彝族自治州", "昆明市", "丽江市", "临沧市", "怒江傈傈族自治州", "曲靖市", "思茅市", "文山壮族苗族自治州", "西双版纳傣族自治州", "玉溪市", "昭通市");
+    city[31] = new Array("杭州市", "湖州市", "嘉兴市", "金华市", "丽水市", "宁波市", "衢州市", "绍兴市", "台州市", "温州市", "舟山市");
+    city[32] = new Array("香港特别行政区");
+    city[33] = new Array("澳门特别行政区");
+    city[34] = new Array("高雄市", "高雄县", "花莲县", "基隆市", "嘉义市", "嘉义县", "苗栗县", "南投县", "澎湖县", "屏东县", "台北市", "台北县", "台东县", "台南市", "台南县", "台中市", "台中县", "桃园县", "新竹市", "新竹县", "宜兰县", "云林县", "彰化县");
+
+    $("#selectProv").on("change",function(){
+        $("#selectCity").children("option").detach();
+        $("#selectCity").append("<option></option>");
+        var indexProv = $("#selectProv>option:selected").index();//取得选中的想的数组下标0
+        if (indexProv > 0) {
+            for (var i = 0; i < city[indexProv].length; i++) {
+                $("#selectCity").append("<option>" + city[indexProv][i] + "</option>");
+            }
+            console.log( $("#selectProv>option:selected").val() + $("#selectCity>option:first").val() );
+        }else {
+            console.log( "请选择省份" );
+        }
+    });
+
+    $("#selectCity").on("change",function(){
+        console.log( $("#selectProv>option:selected").val() + $("#selectCity>option:selected").val() );
+    });
+
+});
+
+
+
+	function changeImg(){
+		document.getElementById("img").src="http://218.246.20.82:16925/SelfOpenAccount/image.jsp?"+Math.random();
+	}
+
+
+   // var url = 'http://218.246.20.82:16925/SelfOpenAccount/index.jsp?brokerId=';
+    $(function() {
+        $.ajaxSetup({
+            cache: false
+        });
+        $('#agentId').combobox({
+            'valueField': 'agentId',
+            'textField': 'agentIdAndName',
+            'panelHeight': 'auto',
+            'width': 130,
+            'panelHeight': 250,
+            'editable': false,
+            formatter: function(row) {
+                return row.agentIdAndName;
+            }
+        });
+    });
+    function city_change() {
+        var city = $("#selectCity").val();
+        var pro = $("#selectProv").val();
+
+document.getElementById("brokerId").options.length=0;
+
+
+
+
+$.ajax({
+    type : "GET",
+    url : "123.php",
+    dataType : "jsonp",
+	data:{"city": city,"pro": pro},
+	
+	jsonp: "callback",//传递给请求处理程序或页面的，用以获得jsonp回调函数名的参数名(默认为:callback)
+    jsonpCallback:"success_jsonpCallback",//自定义的jsonp回调函数名称，默认为jQuery自动生成的随机函数名
+    success : function(mjson){
+		var data = JSON.parse(mjson);
+
+	//	alert(data.message);
+	//	alert(data.payload[0].realname.replace("agt_",""));
+                if (data.result) {
+					
+$.each(data.payload,function(j){					
+
+	//document.getElementById("brokerId").options.add(new Option());
+	
+var selectObj=document.getElementById("brokerId");
+
+   selectObj.options[selectObj.length] = new Option(data.payload[j].agentIdAndName,data.payload[j].agentId);	
+   // $("#list").append("<li>name:"+data[i].name+"&nbsp; age:"+json[i].age+"</li>")
+    })
+
+                }
+    },
+    error:function(){
+        alert('fail');
+    }
+});
+
+		
+		
+/*        $.ajax({
+            'type': 'get',
+            'url': 'http://qbyp.jinmajia.com/user/regist/getAgents.do',
+            'data': {
+                "city": city,
+                "pro": pro
+            },
+            'success': function(data) {
+                if (data.result) {
+                    data.payload.unshift({
+                        'agentId': '',
+                        'agentIdAndName': '-------请选择-------'
+                    });
+                    $('#agentId').combobox({
+                        'width': 'auto',
+                        'data': data.payload
+                    });
+                } else {
+                    alert("出错啦", data.message, "error");
+                }
+            },
+            'error': function() {
+                alert("出错啦aa", "运营合作方查询失败", "error");
+            }
+        });
+*/    }
+    function fun_sub() {
+        var belongto = $('#agentId').combobox("getValue");
+        if (belongto == '') {
+            $.messager.alert("提示", "请选择经纪会员", "error");
+            return;
+        } else {
+            window.location.href = url + belongto;
+        }
+    }
+</script>
+
+<script type="text/javascript" src="./phonereg/product.js"></script>
+</body></html>
