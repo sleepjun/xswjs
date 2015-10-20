@@ -5,16 +5,11 @@
 
 <metahttp-equiv="Content-Type" content="text/html;charset=utf-8" />  
 <script type="text/javascript">
-
-                   function load()
-
-                   {
-
-                            window.location ="/xswjs/jinmajia2/qbyp.jinmajia.com/market/s/48/index.jsp";
-
-                   }
-
-         </script>
+      function load()
+      {
+               window.location ="/xswjs/jinmajia2/qbyp.jinmajia.com/market/s/48/index.jsp";
+      }
+</script>
 
 </head>
 
