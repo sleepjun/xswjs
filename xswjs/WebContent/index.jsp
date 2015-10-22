@@ -10,9 +10,7 @@
                window.location ="/xswjs/jinmajia2/qbyp.jinmajia.com/market/s/48/index.jsp";
       }
 </script>
-
 </head>
-
 <body onload = "load()">
 	正在加载......
 </body>
