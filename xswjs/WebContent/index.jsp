@@ -2,7 +2,6 @@
 <html>
 
 <head>
-
 <metahttp-equiv="Content-Type" content="text/html;charset=utf-8" />  
 <script type="text/javascript">
       function load()
