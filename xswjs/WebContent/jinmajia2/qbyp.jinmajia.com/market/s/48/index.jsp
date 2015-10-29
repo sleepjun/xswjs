@@ -17,11 +17,11 @@
 <body onload="navNow(2);">
 <div class="wrapper"> 
   <script>var ititle=document.title;ititle=ititle.substr(0,ititle.indexOf("-"))+" - 金马甲邮币交易平台";document.title=ititle;</script>
-<link href="../../../../www.jinmajia.com/web/style/newmenu.css" tppabs="http://www.jinmajia.com/web/style/newmenu.css" rev="stylesheet" rel="stylesheet" type="text/css"/>
-<link href="../../../../www.jinmajia.com/lyzt/2014/02/coin/style/nav1.css" tppabs="http://www.jinmajia.com/lyzt/2014/02/coin/style/nav1.css" rev="stylesheet" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="../../../../www.jinmajia.com/web/style/js/index.js" tppabs="http://www.jinmajia.com/web/style/js/index.js"></script>
-<script type="text/javascript" src="../../../../cbjs.baidu.com/js/m.js" tppabs="http://cbjs.baidu.com/js/m.js"></script>
-<script type="text/javascript" src="../../../../www.jinmajia.com/web/sys/top_s_qbyp.js" tppabs="http://www.jinmajia.com/web/sys/top_s_qbyp.js"></script>
+<link href="../../../../www.jinmajia.com/web/style/newmenu.css" rev="stylesheet" rel="stylesheet" type="text/css"/>
+<link href="../../../../www.jinmajia.com/lyzt/2014/02/coin/style/nav1.css" rev="stylesheet" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../../../www.jinmajia.com/web/style/js/index.js"></script>
+<script type="text/javascript" src="../../../../cbjs.baidu.com/js/m.js"></script>
+<script type="text/javascript" src="../../../../www.jinmajia.com/web/sys/top_s_qbyp.js"></script>
 <div class="navtop">
  <!--<script type="text/javascript">BAIDU_CLB_fillSlot("1009276");</script>-->
  <img src="images/toppng.png" alt="" />
@@ -85,7 +85,7 @@
             <ul class="article">
 <s:iterator id="art" value="#application.titlelist"  begin="0" end="29">
 <li>
-<a title="<s:property value="#art.title"/>" target="_blank" href="news_info.action?url=<s:property value="#art.src"/>" class="artitlelist"><s:property value="#art.title"/></a><span class="timedefault">2015-10-19</span>
+<a title="<s:property value="#art.title"/>" target="_blank" href="news_info.action?url=<s:property value="#art.src"/>" class="artitlelist"><s:property value="#art.title"/></a><span class="timedefault"><s:property value="#art.data"/></span>
 </li>
 </s:iterator><li class="listline"></li></ul><br><center>
         第
@@ -101,7 +101,7 @@
             <ul class="article">
 <s:iterator id="art" value="#application.titlelist"  begin="30" end="58">
 <li>
-<a title="<s:property value="#art.title"/>" target="_blank" href="news_info.action?url=<s:property value="#art.src"/>" class="artitlelist"><s:property value="#art.title"/></a><span class="timedefault">2015-10-19</span>
+<a title="<s:property value="#art.title"/>" target="_blank" href="news_info.action?url=<s:property value="#art.src"/>" class="artitlelist"><s:property value="#art.title"/></a><span class="timedefault"><s:property value="#art.data"/></span>
 </li>
 </s:iterator>
 </ul><br><script>if(document.getElementById("p1"))
@@ -205,7 +205,7 @@
           <ul class="article">
 <s:iterator id="art" value="#application.titlelist"  begin="63" end="92">
 <li>
-<a title="<s:property value="#art.title"/>" target="_blank" href="news_info.action?url=<s:property value="#art.src"/>" class="artitlelist"><s:property value="#art.title"/></a><span class="timedefault">2015-10-19</span>
+<a title="<s:property value="#art.title"/>" target="_blank" href="news_info.action?url=<s:property value="#art.src"/>" class="artitlelist"><s:property value="#art.title"/></a><span class="timedefault"><s:property value="#art.data"/></span>
 </li>
 </s:iterator><li class="listline"></li></ul><br><center>
         第

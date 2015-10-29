@@ -73,7 +73,7 @@ public class newsBiz {
 				System.out.println(doc);
 				Article a = null;
 				
-		        
+				int i2 = 0;
 		       // System.out.println("--------------");
 		        Elements contents = doc.getElementsByClass("article");
 		        for(int i=0;i<6;i++){
@@ -91,29 +91,16 @@ public class newsBiz {
 			        }
 			       // System.out.println("---------------------------------------------------------");
 			        System.out.println(titlelist.size());
-		        }
-		        /*
-		        contents = doc.getElementsByClass("item_listzh");
-		        for(int i=0;i<2;i++){
-			        Elements datas = contents.get(i).getElementsByTag("a");
-			       
-			        for (Element data : datas) 
+			        Elements datas2 = contents.get(i).getElementsByClass("timedefault");
+				    
+			        for (Element data : datas2) 
 			        {
-			           //String title = data.attr("title");
-			        	a = new Article();
-			        	a.setTitle(data.text());
-			        	
-			        	a.setSrc(data.attr("href"));
-			        	titlelist.add(a);
+			           String s = data.text().toString();
+			           titlelist.get(i2).setData(s);
+			           i2++;
 			        }
-			       // System.out.println("---------------------------------------------------------");
-		        }
-		        contents = doc.getElementsByClass("tt");
-		       a = new Article();
-		       String s1 = contents.outerHtml();
-		       s1 = s1.replaceAll("show.", "news_ftitle.action?url=show.");
-		        a.setPtext(s1);
-		        titlelist.add(a);*/
+			        System.out.println("1");
+		        }		        
 			} catch (IOException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
