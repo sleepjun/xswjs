@@ -73,15 +73,12 @@ public class newsBiz {
 				System.out.println(doc);
 				Article a = null;
 				
-		        
-		       // System.out.println("--------------");
 		        Elements contents = doc.getElementsByClass("article");
 		        for(int i=0;i<6;i++){
 			        Elements datas = contents.get(i).getElementsByTag("a");
 			       
 			        for (Element data : datas) 
 			        {
-			           //String title = data.attr("title");
 			        	a = new Article();
 			        	a.setTitle(data.text());
 			        	String s = data.text().toString();
@@ -89,97 +86,12 @@ public class newsBiz {
 			        	a.setSrc(data.attr("href"));
 			        	titlelist.add(a);
 			        }
-			       // System.out.println("---------------------------------------------------------");
 			        System.out.println(titlelist.size());
 		        }
-		        /*
-		        contents = doc.getElementsByClass("item_listzh");
-		        for(int i=0;i<2;i++){
-			        Elements datas = contents.get(i).getElementsByTag("a");
-			       
-			        for (Element data : datas) 
-			        {
-			           //String title = data.attr("title");
-			        	a = new Article();
-			        	a.setTitle(data.text());
-			        	
-			        	a.setSrc(data.attr("href"));
-			        	titlelist.add(a);
-			        }
-			       // System.out.println("---------------------------------------------------------");
-		        }
-		        contents = doc.getElementsByClass("tt");
-		       a = new Article();
-		       String s1 = contents.outerHtml();
-		       s1 = s1.replaceAll("show.", "news_ftitle.action?url=show.");
-		        a.setPtext(s1);
-		        titlelist.add(a);*/
+		        
 			} catch (IOException e) {
-				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
 			return titlelist;
 	}
-	public String getinform()
-	{
-		String s = "";
-		 Document doc;
-			try {
-					doc = Jsoup.connect("http://www.hzqbyp.com/list.asp?id=1").get();
-					//System.out.println(doc);
-				    Elements content = doc.getElementsByClass("neirong");
-				    s = content.outerHtml();
-				    System.out.println(s);    	      		      		        
-			} catch (IOException e) {
-					// TODO Auto-generated catch block
-					e.printStackTrace();
-				}
-			return s;
-	}
-	/*
-	 * 
-	List<Article> titlelist = new ArrayList<Article>();
-		List<Article> informlist = new ArrayList<Article>();
-		List<Article> newslist = new ArrayList<Article>();
-		List<Article> downlist = new ArrayList<Article>();
-		List<Article> intolist = new ArrayList<Article>();
-	 */
-	public String ftitle(String url)
-	{
-		 Document doc;
-		 String s = "";
-			try {
-				doc = Jsoup.connect("http://www.hzqbyp.com/"+url).get();
-				//System.out.println(doc);
-		        Elements content = doc.getElementsByClass("tt_title");
-		        s = content.outerHtml();
-			    System.out.println(s);    	      		      		        
-			} catch (IOException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
-			return s;
-	}
-	public String getbigtitle()
-	{
-		Document doc;
-		 String s = "";
-			try {
-				doc = Jsoup.connect("http://www.hzqbyp.com/").get();
-				//System.out.println(doc);
-		        Elements content = doc.getElementsByClass("tt");
-		        for (Element data : content) 
-		        {
-		           s+=data.outerHtml();
-		        }
-		        s = s.replaceAll("show.", "news_ftitle.action?url=show.");
-		       // s = s.replaceAll("http://www.hzqbyp.comhttp://www.hzqbyp.com/uploadfile", "http://www.hzqbyp.com/uploadfile");
-			   // System.out.println(s);    	      		      		        
-			} catch (IOException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
-			return s;
-	}
-	
 }

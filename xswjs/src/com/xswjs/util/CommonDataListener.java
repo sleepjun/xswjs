@@ -31,9 +31,9 @@ public class CommonDataListener implements ServletContextListener{
 		List<Article> titlelist = new ArrayList<Article>();
 		String informlist = "";
 		titlelist = nbiz.getAllJMJArt();
-		informlist = nbiz.getinform();
+		//informlist = nbiz.getinform();
 		ctx.setAttribute("titlelist", titlelist);
-		ctx.setAttribute("informlist", informlist);
+		//ctx.setAttribute("informlist", informlist);
 		//artlistener.setData(informlist);
 	}
 }

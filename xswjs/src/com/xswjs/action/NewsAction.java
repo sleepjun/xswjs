@@ -52,7 +52,7 @@ public class NewsAction extends ActionSupport{
 	{
 		try {			
 			titlelist = nBiz.getAllArt();
-			informlist = nBiz.getinform();
+			//informlist = nBiz.getinform();
 		} catch (Exception e) {
 			// TODO: handle exception
 		}
