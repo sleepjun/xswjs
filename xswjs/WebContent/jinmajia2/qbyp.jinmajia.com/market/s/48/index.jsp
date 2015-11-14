@@ -4,6 +4,7 @@
 <%@ taglib uri="/struts-tags" prefix="s" %>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="360-site-verification" content="61028020eeee2dc9ddf2a7b809ea995a" />
 <title>金马甲--资产权益与可投资特色商品在线交易平台--邮币交易</title>
 <link type="text/css" href="style/A.layout.css.pagespeed.cf.zAVaYUyDrA.css" tppabs="http://qbyp.jinmajia.com/market/s/48/style/A.layout.css.pagespeed.cf.zAVaYUyDrA.css" rel="stylesheet"/>
 <script type="text/javascript" src="js/jquery-1.8.3.min.js.pagespeed.jm.0IhQ85x_cu.js" tppabs="http://qbyp.jinmajia.com/market/s/48/js/jquery-1.8.3.min.js.pagespeed.jm.0IhQ85x_cu.js"></script>
@@ -305,7 +306,11 @@
 	</p>
 
 	<p class="bt_txt">
-		<a href="javascript:if(confirm('http://www.315cebs.com.cn/cxgs.php/  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ�����·���ⲿ������Ϊ������ʼ��ַ�ĵ�ַ��  \n\n�����ڷ������ϴ���?'))window.location='http://www.315cebs.com.cn/cxgs.php/'" tppabs="http://www.315cebs.com.cn/cxgs.php/" target="_blank"><img src="../../../../gdsp.jinmajia.com/images/cxpt.jpg" tppabs="http://gdsp.jinmajia.com/images/cxpt.jpg"/></a><a href="javascript:if(confirm('http://net.china.com.cn/index.htm  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ�����·���ⲿ������Ϊ������ʼ��ַ�ĵ�ַ��  \n\n�����ڷ������ϴ���?'))window.location='http://net.china.com.cn/index.htm'" tppabs="http://net.china.com.cn/index.htm" target="_blank"><img src="../../../../gdsp.jinmajia.com/images/blxx.gif" tppabs="http://gdsp.jinmajia.com/images/blxx.gif"/></a><a href="javascript:if(confirm('http://www.bj.cyberpolice.cn/alarm/alarm.htm  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ�����·���ⲿ������Ϊ������ʼ��ַ�ĵ�ַ��  \n\n�����ڷ������ϴ���?'))window.location='http://www.bj.cyberpolice.cn/alarm/alarm.htm'" tppabs="http://www.bj.cyberpolice.cn/alarm/alarm.htm" target="_blank"><img src="../../../../gdsp.jinmajia.com/images/wangjing2.gif" tppabs="http://gdsp.jinmajia.com/images/wangjing2.gif"/></a><a href="javascript:if(confirm('http://www.315online.com.cn/member/315100004.html  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ�����·���ⲿ������Ϊ������ʼ��ַ�ĵ�ַ��  \n\n�����ڷ������ϴ���?'))window.location='http://www.315online.com.cn/member/315100004.html'" tppabs="http://www.315online.com.cn/member/315100004.html" target="_blank"><img src="../../../../gdsp.jinmajia.com/images/wsjy.gif" tppabs="http://gdsp.jinmajia.com/images/wsjy.gif"/></a>
+		<a href="javascript:if(confirm('http://www.315cebs.com.cn/cxgs.php'))window.location='http://www.315cebs.com.cn/cxgs.php/'"  target="_blank"><img src="../../../../gdsp.jinmajia.com/images/cxpt.jpg" /></a>
+		<a href="javascript:if(confirm('http://net.china.com.cn/index.htm'))window.location='http://net.china.com.cn/index.htm'" target="_blank"><img src="../../../../gdsp.jinmajia.com/images/blxx.gif"/></a>
+		<a href="javascript:if(confirm('http://www.bj.cyberpolice.cn/alarm/alarm.htm'))window.location='http://www.bj.cyberpolice.cn/alarm/alarm.htm'" target="_blank"><img src="../../../../gdsp.jinmajia.com/images/wangjing2.gif"/></a>
+		<a href="javascript:if(confirm('http://www.315online.com.cn/member/315100004.html'))window.location='http://www.315online.com.cn/member/315100004.html'" target="_blank"><img src="../../../../gdsp.jinmajia.com/images/wsjy.gif" /></a>
+		<a href="http://webscan.360.cn/index/checkwebsite/url/xswjs.com"><img border="0" src="http://img.webscan.360.cn/status/pai/hash/d0dac3cdc591e54c2b180e08f6ead90e"/></a>
 	</p>
 	</center>
 	<script type="text/javascript">var gaJsHost=(("https:"==document.location.protocol)?"https://ssl.":"http://www./");document.write(unescape("%3Cscript src='"+gaJsHost+"google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));</script>
