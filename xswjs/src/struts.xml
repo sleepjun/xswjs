@@ -39,6 +39,8 @@
 			<result name="YHZC">../../../user/regist/step3.jsp</result>
 			<result name="BANK">../../../article/bank.jsp</result>
 			<result name="REG">../../../article/step3.jsp</result>
+			<result name="PhoneMessageInfo">../../../mhzqbyp/www.hzqbyp.com/m/phoneinfo.jsp</result>
+			<result name="PGGGS">../../../mhzqbyp/www.hzqbyp.com/m/zx.jsp</result>
 		</action>
 
 	</package>

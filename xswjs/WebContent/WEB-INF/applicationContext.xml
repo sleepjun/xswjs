@@ -6,7 +6,7 @@
 						http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
 	<bean id="c3p0DataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource" destroy-method="close">
 		<property name="driverClass" value="com.mysql.jdbc.Driver"/>
-		<property name="jdbcUrl" value="jdbc:mysql://localhost:3306/zf"/>
+		<property name="jdbcUrl" value="jdbc:mysql://localhost:3306/xswjs"/>
 		<property name="user" value="root"/>
 		<property name="password" value="12345"/>
 		<property name="minPoolSize" value="10"/>

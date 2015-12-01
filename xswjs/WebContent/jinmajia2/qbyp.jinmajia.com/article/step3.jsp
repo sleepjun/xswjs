@@ -38,7 +38,9 @@
 
 
 <option  value="118821">--------1763衙前 包国方------</option>
-
+<option  value="1882">--------1882    王利峰------</option>
+<option  value="1883">--------1883    汤丽娜------</option>
+<option  value="1885">--------1885    杨小珍------</option>
                   </SELECT></td>
                  <td width="200" align="left">
                  <a id="spanhiddenjmj" class="easyui-linkbutton" href="http://218.246.20.82:16925/SelfOpenAccount/index.jsp?brokerId=1763" onclick="fun_sub();">申请开户</a>
@@ -175,7 +177,16 @@ function CheckForm()
 				  }
 				  else
 					  $("#spanhiddenjmj").attr("href","http://218.246.20.82:16925/SelfOpenAccount/index.jsp?brokerId=1763");
-				}		
+				}	
+				if(selectedpeople==2){
+						  $("#spanhiddenjmj").attr("href","http://218.246.20.82:16925/SelfOpenAccount/index.jsp?brokerId=1882");
+				}	
+				if(selectedpeople==3){
+						  $("#spanhiddenjmj").attr("href","http://218.246.20.82:16925/SelfOpenAccount/index.jsp?brokerId=1883");
+				}	
+				if(selectedpeople==4){
+						  $("#spanhiddenjmj").attr("href","http://218.246.20.82:16925/SelfOpenAccount/index.jsp?brokerId=1885");
+				}	
             };
             function selectpeoplenj(){
             	var selectedpeople = $("#testSelectnj").get(0).selectedIndex;

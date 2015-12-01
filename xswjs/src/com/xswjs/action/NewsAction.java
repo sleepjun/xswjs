@@ -69,10 +69,10 @@ public class NewsAction extends ActionSupport{
 				//System.out.println(doc);
 		        Elements content = doc.getElementsByClass("cont");
 		        s = content.outerHtml();
-		        s = s.replaceAll("/uploadfile/image/", "http://www.hzqbyp.com/uploadfile/image/");
+		        //s = s.replaceAll("/uploadfile/image/", "http://www.hzqbyp.com/uploadfile/image/");
 		        //http://www.hzqbyp.comhttp://www.hzqbyp.com/uploadfile
 		        //http://www.hzqbyp.com
-		        s = s.replaceAll("http://www.hzqbyp.comhttp://www.hzqbyp.com/uploadfile", "http://www.hzqbyp.com/uploadfile");
+		        //s = s.replaceAll("http://www.hzqbyp.comhttp://www.hzqbyp.com/uploadfile", "http://www.hzqbyp.com/uploadfile");
 		        s = s.replaceAll("show.", "news_ftitle.action?url=show.");
 		        s = s.replaceAll("&amp;", "");
 		        s = s.replaceAll("list.asp", "news_getNextinform.action?url=list.asp");
@@ -85,6 +85,33 @@ public class NewsAction extends ActionSupport{
 			art.setData(s);
 			return "MessageInfo";
 	}
+	
+	//pinfo
+		public String pinfo()
+		{
+			Document doc;
+			 String s = "";
+				try {
+					doc = Jsoup.connect("http://qbyp.jinmajia.com/"+url).get();
+					//System.out.println(doc);
+			        Elements content = doc.getElementsByClass("cont");
+			        s = content.outerHtml();
+			        //s = s.replaceAll("/uploadfile/image/", "http://www.hzqbyp.com/uploadfile/image/");
+			        //http://www.hzqbyp.comhttp://www.hzqbyp.com/uploadfile
+			        //http://www.hzqbyp.com
+			        //s = s.replaceAll("http://www.hzqbyp.comhttp://www.hzqbyp.com/uploadfile", "http://www.hzqbyp.com/uploadfile");
+			        s = s.replaceAll("show.", "news_ftitle.action?url=show.");
+			        s = s.replaceAll("&amp;", "");
+			        s = s.replaceAll("list.asp", "news_getNextinform.action?url=list.asp");
+			       // s = s.replaceAll("http://www.hzqbyp.comhttp://www.hzqbyp.com/uploadfile", "http://www.hzqbyp.com/uploadfile");
+				    System.out.println(s);    	      		      		        
+				} catch (IOException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+				art.setData(s);
+				return "PhoneMessageInfo";
+		}
 	///gggs
 	public String goal(String goalurl)
 	{
@@ -93,31 +120,52 @@ public class NewsAction extends ActionSupport{
 			try {
 				doc = Jsoup.connect(goalurl).get();
 				System.out.println(doc);
-				//System.out.println(doc);
 		        Elements content = doc.getElementsByClass("cont_right");
 		        s = content.outerHtml();
 		        s = s.replaceAll("/article", "news_info.action?url=/article");
-		        ///lyzt
+
 		        s = s.replaceAll("/lyzt", "news_info.action?url=/lyzt");
-		        //http://www.jinmajia.com/article
+
 		        s = s.replaceAll("http://www.jinmajia.com", "");
-		        //http://www.hzqbyp.comhttp://www.hzqbyp.com/uploadfile
-		        //http://www.hzqbyp.com
+
 		        System.out.println(s);
-		        s = s.replaceAll("http://www.hzqbyp.comhttp://www.hzqbyp.com/uploadfile", "http://www.hzqbyp.com/uploadfile");
 		        s = s.replaceAll("show.", "news_ftitle.action?url=show.");
 		        s = s.replaceAll("&amp;", "");
 		        s = s.replaceAll("list.asp", "news_getNextinform.action?url=list.asp");
-		       // s = s.replaceAll("http://www.hzqbyp.comhttp://www.hzqbyp.com/uploadfile", "http://www.hzqbyp.com/uploadfile");
 			    System.out.println(s);    	      		      		        
 			} catch (IOException e) {
-				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
 			art.setData(s);
 			return "GGGS";
 	}
-	
+	///gggs
+		public String pgoal(String goalurl)
+		{
+			Document doc;
+			 String s = "";
+				try {
+					doc = Jsoup.connect(goalurl).get();
+					System.out.println(doc);
+			        Elements content = doc.getElementsByClass("cont_right");
+			        s = content.outerHtml();
+			        s = s.replaceAll("/article", "news_pinfo.action?url=/article");
+
+			        s = s.replaceAll("/lyzt", "news_pinfo.action?url=/lyzt");
+
+			        s = s.replaceAll("http://www.jinmajia.com", "");
+
+			        System.out.println(s);
+			        s = s.replaceAll("show.", "news_ftitle.action?url=show.");
+			        s = s.replaceAll("&amp;", "");
+			        s = s.replaceAll("list.asp", "news_getNextinform.action?url=list.asp");
+				    System.out.println(s);    	      		      		        
+				} catch (IOException e) {
+					e.printStackTrace();
+				}
+				art.setData(s);
+				return "PGGGS";
+		}
 	public String goal()
 	{
 		Document doc;
@@ -253,6 +301,28 @@ public class NewsAction extends ActionSupport{
 	public String gggs()
 	{
 		return goal("http://qbyp.jinmajia.com/lyzt/2014/02/coin/gggs/");
+	}
+	
+	//phone
+	public String pgggs()
+	{
+		return pgoal("http://qbyp.jinmajia.com/lyzt/2014/02/coin/gggs/");
+	}
+	public String pybml()
+	{
+		return pgoal("http://qbyp.jinmajia.com/lyzt/2014/02/coin/list.shtml");
+	}
+	public String pybjg()
+	{
+		return pgoal("http://qbyp.jinmajia.com/lyzt/2014/02/coin/price/index1.shtml");
+	}
+	public String pjywj()
+	{
+		return pgoal("http://qbyp.jinmajia.com/lyzt/2014/02/coin/jygz/index3.shtml");
+	}
+	public String pjyzn()
+	{
+		return pgoal("http://qbyp.jinmajia.com/lyzt/2014/02/coin/jyzn/index2.shtml");
 	}
 	public String ybml()
 	{

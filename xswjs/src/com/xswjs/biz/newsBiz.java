@@ -9,12 +9,14 @@ import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
+import com.xswjs.dao.ArticleDao;
+import com.xswjs.dao.impl.ArticleDaoImpl;
 import com.xswjs.entity.Article;
 
 public class newsBiz {
 	
 	public List<Article> getAllArt()
-	{
+	{		
 		 Document doc;
 		 List<Article> titlelist = new ArrayList<Article>();
 			try {
@@ -62,11 +64,14 @@ public class newsBiz {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
+			
 			return titlelist;
 	}
 	public List<Article> getAllJMJArt()
 	{
 		 Document doc;
+		 ArticleDao artdao = new ArticleDaoImpl();
+		
 		 List<Article> titlelist = new ArrayList<Article>();
 			try {
 				doc = Jsoup.connect("http://qbyp.jinmajia.com/market/s/48/").get();
@@ -102,9 +107,13 @@ public class newsBiz {
 			        System.out.println("1");
 		        }		        
 			} catch (IOException e) {
-				// TODO Auto-generated catch block
+					 titlelist = null;
 				e.printStackTrace();
 			}
+			if(titlelist==null){
+				titlelist = artdao.getAll();
+			}
+			artdao.installAll(titlelist);
 			return titlelist;
 	}
 	public String getinform()
